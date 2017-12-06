@@ -24,9 +24,25 @@ alt="Mobile platform" width="240" height="180" border="10" /></a>
  MAV application;               Mobile implementation (Video link for mainland China friends: [Video1](http://www.bilibili.com/video/av10813254/) [Video2](http://www.bilibili.com/video/av10813205/) [Video3](http://www.bilibili.com/video/av10813089/) [Video4](http://www.bilibili.com/video/av10813325/) [Video5](http://www.bilibili.com/video/av10813030/))
 
 **Related Papers**
-* **VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator**, Tong Qin, Peiliang Li, Zhenfei Yang, Shaojie Shen [techincal report](https://github.com/HKUST-Aerial-Robotics/VINS-Mono/blob/master/support_files/paper/tro_technical_report.pdf) 
-* **Autonomous Aerial Navigation Using Monocular Visual-Inertial Fusion**, Yi Lin, Fei Gao, Tong Qin, Wenliang Gao, Tianbo Liu, William Wu, Zhenfei Yang, Shaojie Shen (***JFR*** accepted) [pdf](https://github.com/HKUST-Aerial-Robotics/VINS-Mono/blob/master/support_files/paper/jfr2017yi.pdf)  
-
+* **VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator**, Tong Qin, Peiliang Li, Zhenfei Yang, Shaojie Shen [arXiv:1708.03852](https://arxiv.org/abs/1708.03852v1) 
+* **Autonomous Aerial Navigation Using Monocular Visual-Inertial Fusion**, Yi Lin, Fei Gao, Tong Qin, Wenliang Gao, Tianbo Liu, William Wu, Zhenfei Yang, Shaojie Shen, J Field Robotics. 2017;00:1–29. [https://doi.org/10.1002/rob.21732](https://doi.org/10.1002/rob.21732)  
+```
+@article{qin2017vins,
+  title={VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator},
+  author={Qin, Tong and Li, Peiliang and Shen, Shaojie},
+  journal={arXiv preprint arXiv:1708.03852},
+  year={2017}
+}
+```
+```
+@article{Lin17,
+  Author = {Y. Lin and F. Gao and T. Qin and W. Gao and T. Liu and W. Wu and Z. Yang and S. Shen},
+  Journal = jfr,
+  Title = {Autonomous Aerial Navigation Using Monocular Visual-Inertial Fusion},  
+  Volume = {00},
+  Pages = {1-29},
+  Year = {2017}} 
+```
 *If you use VINS-Mono for your academic research, please cite at least one of our related papers.*
 
 ## 1. Prerequisites
@@ -37,7 +53,7 @@ additional ROS pacakge
 ```
     sudo apt-get install ros-YOUR_DISTRO-cv-bridge ros-YOUR_DISTRO-tf ros-YOUR_DISTRO-message-filters ros-YOUR_DISTRO-image-transport
 ```
-also update opencv3 for ROS Kinetic
+If you install ROS Kinetic, please update opencv3 with 
 ```
     sudo apt-get install ros-kinetic-opencv3
 ```
@@ -119,6 +135,6 @@ We use [ceres solver](http://ceres-solver.org/) for non-linear optimization and 
 ## 7. Licence
 The source code is released under [GPLv3](http://www.gnu.org/licenses/) license.
 
-We are still working on improving the code reliability. For any technical issues, please contact Tong QIN <tong.qin@connect.ust.hk> or Peiliang LI <pliap@connect.ust.hk>.
+We are still working on improving the code reliability. For any technical issues, please contact Tong QIN <tong.qinATconnect.ust.hk> or Peiliang LI <pliapATconnect.ust.hk>.
 
-For commercial inquiries, please contact Shaojie SHEN <eeshaojie@ust.hk>
+For commercial inquiries, please contact Shaojie SHEN <eeshaojieATust.hk>
